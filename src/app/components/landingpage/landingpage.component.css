@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(173, 180, 176);
+}
+
+
+main{
+    height: 100vh;
+    background-image: url(../../../assets/wallpaper.png);
+    background-position: center;    
+    position: relative;
+    border-bottom: black 5px solid;
+    box-shadow: 0  7px 10px 0 black;
+    
+}
+header{
+    height: 100vh;
+    background-color: rgba(33, 34, 41, 0.3);
+    position: relative;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+
+.row{
+    box-sizing: border-box;
+    position: relative;
+}
+.landing-wrapper{
+    position: relative ;
+    box-sizing: border-box;
+    top: 250px;
+    
+}
+.greetings{
+    top: 100px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 5px ;
+    
+}
+
+.sections-wrapper{
+    background-color: rgb(173, 180, 180);
+}
+/* .sections-wrapper .app{
+    margin: 2px;
+    
+} */
+.logo{
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 15px;
+}
+.logo img{
+    position: relative;
+    width: 150px;
+    margin-top: 30px;
+    
+    
+}
+
+
+/* @media (min-width:768px){
+    .logo{
+        text-align: center;
+        
+        margin-top: 25px;
+    }
+    .greetings img{
+        width: 100px;
+        margin-right: 55px;
+    }
+    .greetings{
+        position: absolute;
+        top: 200px;
+        text-align: right;
+        padding-right: 25px;
+        margin-left: 90px;
+        width: 300px;
+        
+        }
+} */
+@media (min-width:1024px){
+    .landing-wrapper{
+        top: 350px;
+    }
+    main{
+        background-position: right;
+        height: 100%;
+    }
+    header {
+        height: 100vh;
+    }
+    .greetings{
+        left: 50px;
+        width: 50%;
+        height: 200px;
+        padding-top: 40px;
+        padding-right: 20px;
+        text-align: right;
+        
+    }
+    .logo{
+        top: 280px;
+        text-align: center;
+        margin-top: 25px;        
+        border-left: white 3px solid;
+    }
+    .logo img{
+        
+        width: 300px;
+        margin-left: 80px;
+    }
+    
+    
+    /* .app::before{
+        display: block;
+        content: "";
+        height: 5px;
+        
+    } */
+}

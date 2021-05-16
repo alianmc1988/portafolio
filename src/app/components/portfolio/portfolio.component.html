@@ -1,0 +1,26 @@
+<section class=" container-fluid" id="portfolio">
+    <div class="portfolio-wrapper container">
+        <div class="title container">
+            <h2 class="mt-5 mb-4"><b>Portfolio</b></h2>
+        </div>
+        
+        <div  class="row">
+            <div #row class="col-lg-4"   *ngFor="let item of proyects">
+                <div class="card mb-3">
+                    <app-demo *ngIf= visible class="demoShow" id="demoShow"></app-demo>
+                   <div class="demos container mt-4">
+                    
+                        <img src="../../../assets/barza.png" alt="demo_pic" srcset="">
+                        <div class="description container">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime deserunt rerum repudiandae ipsam ut voluptate sed facere vitae omnis perspiciatis? </p>
+                            
+                       </div>
+                   </div> 
+                  
+                </div>
+            </div>
+          
+        </div>
+    
+    </div>
+</section>
