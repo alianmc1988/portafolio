@@ -1,21 +1,51 @@
 section{
-   background-color: black;
-   border-radius: 10px;
-   padding: 10px;
+    background-color: rgba(0, 0, 0, 0.061);
+   
+    padding: 15px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.title{
+
+pad: 50px;
 }
 
-h2{
-    color: tan;
-}
 form{
-    max-width: 450px;
-    margin: 0 auto;
+    max-width: 650px;
+    box-shadow: 0px 0px 8px black;
+    /* margin: 0 auto; */
+    background-color:#02424641;
 }
 .card{
     background-color: transparent;
 }
 .card input, textarea, button{
-    padding: 3px;
+    padding: 5px;
     margin: 5px 2px;
 }
+
+input, textarea{
+    background-color: rgb(223, 224, 219);
+    border: none;
+}
+
+.form-wrapper{
+    background-color:#02424641;
+    padding: 40px 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px black;
+}
+
+.contactme{
+    position: relative;
+    
+}
+
+h3{
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
 
