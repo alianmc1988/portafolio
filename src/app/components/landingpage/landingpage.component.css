@@ -27,7 +27,7 @@ header{
 .landing-wrapper{
     position: relative ;
     box-sizing: border-box;
-    top: 250px;
+    top: 200px;
     
 }
 .greetings{
@@ -58,6 +58,10 @@ header{
     
 }
 
+/* .app-portfolio{
+    display: none;
+  } */
+
 
 /* @media (min-width:768px){
     .logo{
@@ -81,7 +85,7 @@ header{
 } */
 @media (min-width:1024px){
     .landing-wrapper{
-        top: 350px;
+        top: 250px;
     }
     main{
         background-position: right;
@@ -118,4 +122,6 @@ header{
         height: 5px;
         
     } */
+    
+  
 }

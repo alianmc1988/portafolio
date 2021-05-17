@@ -1,5 +1,5 @@
-<section class=" container-fluid" id="portfolio">
-    <div class="portfolio-wrapper container">
+<section class=" container-fluid app" id="portfolio">
+    <div  [@show]="!muestra? 'void':'enter'" class="portfolio-wrapper container">
         <div class="title container">
             <h2 class="mt-5 mb-4"><b>Portfolio</b></h2>
         </div>
@@ -11,7 +11,7 @@
                    <div class="demos container mt-4">
                     
                         <a href="#"><img src="../../../assets/barza.png" alt="demo_pic" srcset=""></a> 
-                        <div class="description container">
+                        <div class="description container-fluid">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime deserunt rerum repudiandae ipsam ut voluptate sed facere vitae omnis perspiciatis? </p>
                             
                        </div>

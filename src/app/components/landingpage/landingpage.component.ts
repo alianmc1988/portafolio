@@ -1,6 +1,6 @@
 import { state, style, trigger,transition,animation, animate } from '@angular/animations';
-import { NONE_TYPE } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-landingpage',
@@ -37,10 +37,15 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class LandingpageComponent implements OnInit {
+
+  
   constructor() {
   }
 
   ngOnInit(): void {
+  
+    
+    
   }
   
 }

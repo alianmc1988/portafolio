@@ -46,6 +46,24 @@ h3{
     margin-top: 20px;
     color: white;
     margin-bottom: 20px;
+    font-size: 1.1em;
+    
 }
 
+.btn{
+    border: rgb(61, 61, 61) 2px solid;
+}
+
+.social-wrapper{
+    box-sizing: border-box;
+    position: relative;
+}
+
+.social{
+    box-sizing: border-box;
+    position: relative;
+    background-color: burlywood;
+    height: 100%;
+    padding: 10px;
+}
 
