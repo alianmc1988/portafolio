@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { state, style, trigger,transition,animation, animate } from '@angular/animations';
+import { ProyectsService } from 'src/app/services/proyects.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -19,32 +20,19 @@ import { state, style, trigger,transition,animation, animate } from '@angular/an
         }))
       ])
     ]),
-    // trigger('initStateBrand',[
-    //   state('void',style({
-    //     // transform:'translateX(20%)',
-        
-    //     opacity: 0
-    //   })),
-    //   transition (':enter',[
-    //     animate (1500,style({
-    //       // transform: 'translateX(0)',
-    //       opacity:1
-          
-    //     }))
-    //   ])
-    // ])
   ]
 })
 export class PortfolioComponent implements OnInit {
-   proyects = [{},{},{}];
+   proyects:any; 
    muestra = false;
-   demoMuestra = true;
-  constructor() { 
-  
+   demoMuestra = false;
+  constructor(private _proyectService:ProyectsService) { 
+    this.proyects = this._proyectService.proyectList;
   }
 
     ngOnInit(): void {
-      
+      console.log(this.proyects)
+      //AnimationFadeIn
       window.addEventListener('scroll',()=>{
         
         let item = document.getElementById('portfolio');
@@ -58,11 +46,13 @@ export class PortfolioComponent implements OnInit {
           this.muestra=false;
         }
       })  
+      
+      console.log(this.demoMuestra)
   
   }
   
-  openDemo(e){
+  openDemo(e:any){
   
-    console.log(e);
+    this.demoMuestra = !this.demoMuestra;
   }
 }
