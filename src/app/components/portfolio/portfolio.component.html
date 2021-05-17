@@ -5,12 +5,12 @@
         </div>
         
         <div  class="row">
-            <div #row class="col-lg-4"   *ngFor="let item of proyects">
+            <div #row class="col-lg-4">
                 <div class="card mb-3">
-                    <app-demo  class="demoShow" id="demoShow"></app-demo>
+                    <!-- <app-demo *ngIf="demoMuestra" class="demoShow" id="demoShow1"></app-demo> -->
                    <div class="demos container mt-4">
                     
-                        <a href="#"><img src="../../../assets/barza.png" alt="demo_pic" srcset=""></a> 
+                        <img class="btn"  src="../../../assets/barza.png" alt="demo_pic" srcset=""> 
                         <div class="description container-fluid">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime deserunt rerum repudiandae ipsam ut voluptate sed facere vitae omnis perspiciatis? </p>
                             
@@ -19,7 +19,36 @@
                   
                 </div>
             </div>
-          
+            
+            <div #row class="col-lg-4">
+                <div class="card mb-3">
+                    <!-- <app-demo *ngIf="demoMuestra" class="demoShow" id="demoShow2"></app-demo> -->
+                   <div class="demos container mt-4">
+                    
+                        <img class="btn"  src="../../../assets/barza.png" alt="demo_pic" srcset="">
+                        <div class="description container-fluid">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime deserunt rerum repudiandae ipsam ut voluptate sed facere vitae omnis perspiciatis? </p>
+                            
+                       </div>
+                   </div> 
+                  
+                </div>
+            </div>
+            
+            <div #row class="col-lg-4">
+                <div class="card mb-3">
+                    <!-- <app-demo *ngIf="demoMuestra" class="demoShow" id="demoShow3"></app-demo> -->
+                   <div class="demos container mt-4">
+                    
+                        <img class="btn" id="thirdbtn" src="../../../assets/barza.png" alt="demo_pic" srcset=""> 
+                        <div class="description container-fluid">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime deserunt rerum repudiandae ipsam ut voluptate sed facere vitae omnis perspiciatis? </p>
+                            
+                       </div>
+                   </div> 
+                  
+                </div>
+            </div>
         </div>
     
     </div>

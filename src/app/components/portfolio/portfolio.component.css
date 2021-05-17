@@ -16,6 +16,8 @@ section{
 }
 .col-lg-4{
     margin-bottom: 5px;
+    position: relative;
+    box-sizing: border-box;
     
     
 }
@@ -57,6 +59,7 @@ section{
         border-radius: 3px;
         transition: 500;
     }
+   
 }
 
 

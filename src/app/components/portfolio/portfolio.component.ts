@@ -38,6 +38,7 @@ import { state, style, trigger,transition,animation, animate } from '@angular/an
 export class PortfolioComponent implements OnInit {
    proyects = [{},{},{}];
    muestra = false;
+   demoMuestra = true;
   constructor() { 
   
   }
@@ -56,9 +57,12 @@ export class PortfolioComponent implements OnInit {
         }else{
           this.muestra=false;
         }
-      })
-   
-    
-    
+      })  
+  
+  }
+  
+  openDemo(e){
+  
+    console.log(e);
   }
 }
