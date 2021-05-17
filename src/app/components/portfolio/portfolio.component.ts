@@ -50,15 +50,12 @@ export class PortfolioComponent implements OnInit {
         let altura = window.innerHeight/1.3;
         let distancia = item.getBoundingClientRect().top;
         
-        
-        console.log(distancia, item);
         if(distancia <= altura){
           this.muestra=true;
           
         }else{
           this.muestra=false;
         }
-        console.log(this.muestra);
       })
    
     

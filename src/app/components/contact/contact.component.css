@@ -13,11 +13,12 @@ pad: 50px;
 form{
     max-width: 650px;
     box-shadow: 0px 0px 8px black;
-    /* margin: 0 auto; */
     background-color:#02424641;
 }
 .card{
     background-color: transparent;
+    margin: 5px;
+    border: none;
 }
 .card input, textarea, button{
     padding: 5px;
@@ -44,9 +45,10 @@ input, textarea{
 
 h3{
     margin-top: 20px;
-    color: white;
+    color: rgb(253, 253, 253);
     margin-bottom: 20px;
     font-size: 1.1em;
+    text-shadow: 4px 3px 3px black;
     
 }
 
@@ -65,5 +67,11 @@ h3{
     background-color: burlywood;
     height: 100%;
     padding: 10px;
+}
+
+@media (min-width:1024){
+    .card{
+        padding: 30px;
+    }
 }
 

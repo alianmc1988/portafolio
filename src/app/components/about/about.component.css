@@ -20,4 +20,13 @@ img{
 .paragrph{
     margin-top: 20px;
 }
+.about-coments{
+    margin-top: 30px;
+}
+
+@media (min-width:1024px){
+    .about-coments{
+        margin: auto;
+    }
+}
 
