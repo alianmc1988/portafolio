@@ -58,31 +58,8 @@ header{
     
 }
 
-/* .app-portfolio{
-    display: none;
-  } */
 
 
-/* @media (min-width:768px){
-    .logo{
-        text-align: center;
-        
-        margin-top: 25px;
-    }
-    .greetings img{
-        width: 100px;
-        margin-right: 55px;
-    }
-    .greetings{
-        position: absolute;
-        top: 200px;
-        text-align: right;
-        padding-right: 25px;
-        margin-left: 90px;
-        width: 300px;
-        
-        }
-} */
 @media (min-width:1024px){
     .landing-wrapper{
         top: 250px;
@@ -114,14 +91,5 @@ header{
         width: 300px;
         margin-left: 80px;
     }
-    
-    
-    /* .app::before{
-        display: block;
-        content: "";
-        height: 5px;
-        
-    } */
-    
   
 }

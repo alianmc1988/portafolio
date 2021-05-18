@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
-import {Proyect} from '../interfaces/proyect.interfaces'
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProyectsService {
+
+  // Variables
   proyectList:any;
+  
   constructor() { 
-    this.proyectList = [
+    this.proyectList= [
     {
-      linkname:'http://alian.com',
+      url:"../../../assets/codes/proyect_0/codeHtml.txt",
       name_proyect:'Hostal-Linked',
       description:'este es el primer programa que vamos a ver ahora',
       picture:"../../../assets/barza.png"
@@ -27,4 +29,7 @@ export class ProyectsService {
       picture:"../../../assets/barza.png"
    }];
   }
+  
+  
+  
 }

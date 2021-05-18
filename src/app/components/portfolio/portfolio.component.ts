@@ -23,7 +23,7 @@ import { ProyectsService } from 'src/app/services/proyects.service';
   ]
 })
 export class PortfolioComponent implements OnInit {
-   proyects:any; 
+   proyects:ProyectsService; 
    muestra = false;
    demoMuestra = false;
   constructor(private _proyectService:ProyectsService) { 
@@ -52,7 +52,9 @@ export class PortfolioComponent implements OnInit {
   }
   
   openDemo(e:any){
-  
+    
     this.demoMuestra = !this.demoMuestra;
   }
+  
+ 
 }

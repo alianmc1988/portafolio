@@ -9,10 +9,9 @@
             <div #row *ngFor="let proyect of proyects" class="col-lg-4">
                 <div class="card mb-3">
                    <div class="demos container mt-4">
-                   <a href={{proyect.url}} target="_blank"> <img  class="btn btn-apps"  src={{proyect.picture}} alt="demo_pic" srcset=""></a>
-                        
+                        <img  class="btn btn-apps" (click)="openDemo($event)" src={{proyect.picture}} alt="demo_pic" srcset=""> 
                         <div class="description container-fluid">
-                            <p>Lorem ipsum dolor sit, amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis eum reprehenderit esse tempore id, corporis aliquam dicta dolorem omnis eius! adipisicing elit. Maxime deserunt rerum repudiandae ipsam ut voluptate sed facere vitae omnis perspicia </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime deserunt rerum repudiandae ipsam ut voluptate sed facere vitae omnis perspiciatis? </p>
                             
                        </div>
                    </div> 
@@ -23,7 +22,9 @@
         
         
         <app-demo *ngIf="demoMuestra" class="demoShow container" id="demoShow1"></app-demo>
-        
+        <div class="container buttuncont">
+            <button *ngIf="demoMuestra" (click)="openDemo($event)" class="btn btn-primary">Return</button>
+        </div>
         
     </div>
     
