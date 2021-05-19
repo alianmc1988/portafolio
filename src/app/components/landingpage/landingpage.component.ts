@@ -21,14 +21,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
       ])
     ]),
     trigger('initStateBrand',[
-      state('void',style({
-        // transform:'translateX(20%)',
-        
+      state('void',style({        
         opacity: 0
       })),
       transition (':enter',[
         animate (1500,style({
-          // transform: 'translateX(0)',
           opacity:1
           
         }))

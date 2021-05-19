@@ -1,5 +1,4 @@
 .about-section{
-    background-color: rgba(0, 0, 0, 0.061);
     padding: 15px;
     padding-bottom: 50px;
 }
@@ -25,6 +24,7 @@ img{
 }
 
 @media (min-width:1024px){
+    
     .about-coments{
         margin: auto;
     }

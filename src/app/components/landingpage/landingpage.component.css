@@ -1,16 +1,13 @@
 body{
     background-color: rgb(173, 180, 176);
 }
-
-
 main{
     height: 100vh;
-    background-image: url(../../../assets/wallpaper.png);
+    background-image: url(../../../assets/wallpaperHD.jpg);
     background-position: center;    
     position: relative;
     border-bottom: black 5px solid;
     box-shadow: 0  7px 10px 0 black;
-    
 }
 header{
     height: 100vh;
@@ -19,7 +16,6 @@ header{
     box-sizing: border-box;
     transition: 500ms;
 }
-
 .row{
     box-sizing: border-box;
     position: relative;
@@ -28,23 +24,13 @@ header{
     position: relative ;
     box-sizing: border-box;
     top: 200px;
-    
 }
 .greetings{
     top: 100px;
     text-align: center;
     margin-right: 10px;
-    padding: 5px ;
-    
+    padding: 5px;
 }
-
-.sections-wrapper{
-    background-color: rgb(173, 180, 180);
-}
-/* .sections-wrapper .app{
-    margin: 2px;
-    
-} */
 .logo{
     box-sizing: border-box;
     text-align: center;
@@ -54,8 +40,6 @@ header{
     position: relative;
     width: 150px;
     margin-top: 30px;
-    
-    
 }
 
 
@@ -78,7 +62,6 @@ header{
         padding-top: 40px;
         padding-right: 20px;
         text-align: right;
-        
     }
     .logo{
         top: 280px;
@@ -90,6 +73,9 @@ header{
         
         width: 300px;
         margin-left: 80px;
+    }
+    .sections-wrapper{
+        background-color: rgba(0, 0, 0, 0.061);
     }
   
 }

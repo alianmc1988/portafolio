@@ -1,15 +1,11 @@
 section{
-    background-color: rgba(0, 0, 0, 0.061);
-   
     padding: 15px;
     padding-top: 40px;
     padding-bottom: 50px;
 }
 .title{
-
 pad: 50px;
 }
-
 form{
     max-width: 650px;
     box-shadow: 0px 0px 8px black;
@@ -24,43 +20,33 @@ form{
     padding: 5px;
     margin: 5px 2px;
 }
-
 input, textarea{
     background-color: rgb(223, 224, 219);
     border: none;
 }
-
 .form-wrapper{
     background-color:#02424641;
     padding: 40px 20px;
-    
     border-radius: 10px;
     box-shadow: 0px 2px 3px black;
 }
-
 .contactme{
     position: relative;
-    
 }
-
 h3{
     margin-top: 20px;
     color: rgb(253, 253, 253);
     margin-bottom: 20px;
     font-size: 1.1em;
     text-shadow: 4px 3px 3px black;
-    
 }
-
 .btn{
     border: rgb(61, 61, 61) 2px solid;
 }
-
 .social-wrapper{
     box-sizing: border-box;
     position: relative;
 }
-
 .social{
     box-sizing: border-box;
     position: relative;
@@ -70,10 +56,12 @@ h3{
 }
 
 @media (min-width:1024){
+
+    section{
+        background-color: rgba(0, 0, 0, 0.061);
+    }
     .card{
         padding: 30px;
     }
-    
-    
 }
 

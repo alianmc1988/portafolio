@@ -1,17 +1,10 @@
 
 section{
-    background-color: rgba(0, 0, 0, 0.061);
-    
     padding: 10px;
     padding-bottom: 20px;
     padding-top: 50px;
     position: relative;
-    
 }
-
-
-
-
 .row{
     padding-bottom: 20px;
 }
@@ -19,15 +12,11 @@ section{
     margin-bottom: 5px;
     position: relative;
     box-sizing: border-box;
-    
-    
-    
 }
 .card{
     color: rgb(0, 0, 0);
     background-color:#02424641;
     box-sizing: border-box;
-    
     margin: auto;
 }
 .demos{
@@ -38,30 +27,23 @@ section{
 }
 .demos img{
     width: 70%;
-    /* border: black 3px solid; */
-    /* box-shadow: 0px 0px 8px 0 black; */
     border-radius: 3px;
     transition: 500;
 }
-
-
 .description{
     text-align: left;
     margin-top: 20px;
-    /* max-height: 160px; */
     overflow-y: auto;
     scroll-behavior: unset;
-
 }
 .buttuncont{
     text-align: center;
 }
+
+
 @media(min-width:1024px){
-    
     .demos img{
         width: 80%;
-        /* border: black 3px solid; */
-        /* box-shadow: 0px 0px 8px 0 black; */
         border-radius: 3px;
         transition: 0.5s;
     }

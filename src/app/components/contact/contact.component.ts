@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { state, style, trigger,transition,animation, animate } from '@angular/animations';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {MailInterface} from '../../interfaces/mailStructure.interfaces'
 
 @Component({
   selector: 'app-contact',
@@ -29,10 +30,13 @@ export class ContactComponent implements OnInit {
   constructor( private _buider:FormBuilder
   
   ) {
+    //FormGroup Email-me
     this.mailForm = this._buider.group({
-      mail: ['',Validators.compose([Validators.email, Validators.required])] ,
-      topic: ['', Validators.compose([Validators.required, Validators.minLength(5), Validators.maxLength(25)])],
-      contentMsj: ["",Validators.compose([Validators.required, Validators.maxLength(150)])]
+      from: ['', Validators.compose([Validators.required, Validators.maxLength(25)])],
+      
+      subject: ['', Validators.compose([Validators.required, Validators.maxLength(25)])],
+      msjContent: ["",Validators.compose([Validators.required, Validators.maxLength(150)])]
+      
     });
   }
 
@@ -59,9 +63,17 @@ export class ContactComponent implements OnInit {
   
   }
   
-  sendData(mailForm_values){
-    console.log(mailForm_values)
-    alert("Messaje sended Succefuly")
-    
+  sendData(e:object):any{
+  
+      if (this.mailForm.valid) {
+        let a = this.mailForm.value;
+        let mailbody:MailInterface;
+        mailbody = a;
+        mailbody.to = "alianmc1988@gmail.com";
+        
+        //
+        alert("your Messaje has being sended Succefuly")
+    }
   }
+  
 }

@@ -31,7 +31,6 @@ export class PortfolioComponent implements OnInit {
   }
 
     ngOnInit(): void {
-      console.log(this.proyects)
       //AnimationFadeIn
       window.addEventListener('scroll',()=>{
         
@@ -46,8 +45,6 @@ export class PortfolioComponent implements OnInit {
           this.muestra=false;
         }
       })  
-      
-      console.log(this.demoMuestra)
   
   }
   
