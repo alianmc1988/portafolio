@@ -5,7 +5,7 @@
         <div class="form-wrapper row">
             <div class="col-md-7 contactme">
                 <div><h3>Email me</h3></div>
-                <form (ngSubmit)='sendData(mailForm.value)' [formGroup]='mailForm'>
+                <form (ngSubmit)='sendData(mailForm.value)' [formGroup]='mailForm' class="d-none">
                     <div class="contact-wrapper card">
                         
                                                  
@@ -15,7 +15,7 @@
                          <button [disabled]='mailForm.invalid' type="submit" class="btn btn-primary">Send</button>
                     </div>
                  </form>
-                 <a href="mailto:alianmc1988@gmail.com" id="mail-me" style="opacity: 0;">mymail</a>
+                 <a href="mailto:alianmc1988@gmail.com" target="_blank" id="mail-me">alianmc1988@gmail.com</a>
             </div>
              
             <div class="col-md-5 contactme">
