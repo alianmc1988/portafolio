@@ -10,11 +10,12 @@
                         
                                                  
                          <input formControlName='from' type="text" class="from" id="from" placeholder="From: John Doe">
-                         <input formControlName='subject' type="text" class="subject" id="subject" placeholder="subject">
+                         <input formControlName='mail' type="email" class="email" id="email" placeholder="email: example@example.com">
                          <textarea formControlName='msjContent' name="content" id="content" cols="30" rows="10" placeholder="Message Content"></textarea>
                          <button [disabled]='mailForm.invalid' type="submit" class="btn btn-primary">Send</button>
                     </div>
                  </form>
+                 <a href="mailto:alianmc1988@gmail.com" id="mail-me" style="opacity: 0;">mymail</a>
             </div>
              
             <div class="col-md-5 contactme">

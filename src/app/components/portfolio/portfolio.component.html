@@ -9,10 +9,15 @@
             <div #row *ngFor="let proyect of proyects" class="col-lg-4">
                 <div class="card mb-3">
                    <div class="demos container mt-4">
-                   <a href="https://alianmc1988.github.io/MiFactura/" target="_blank"> <img  class="btn btn-apps"  src={{proyect.picture}} alt="demo_pic" srcset=""></a>
+                   <div class="picture-wrapper">
+                    <a href="https://alianmc1988.github.io/MiFactura/" target="_blank"> <img  class="btn btn-apps"  src={{proyect.picture}} alt="demo_pic" srcset=""></a>
+                   </div>
+                   
                         
                         <div class="description container-fluid">
-                            <p>{{proyect.description}}</p>
+                            <span><b>Name: </b>{{proyect.name_proyect}}</span><br>
+                            <span><b>Technologies: </b>{{proyect.technologies}}</span><br>
+                            <span><b>Description: </b><p>{{proyect.description}}</p></span>
                             
                        </div>
                        <div class="container"><a class="btn btn-primary" href={{proyect.url_gitHub}} target="_blank">View Code</a></div>

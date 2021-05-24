@@ -2,7 +2,9 @@
     padding: 15px;
     padding-bottom: 70px;
 }
-
+p{
+    font-size: .9em;
+}
 .about-wrapper{
     background-color:#02424641;
     border-radius: 10px;
@@ -10,11 +12,13 @@
 }
 .myPic{
     text-align: center;
+    position: relative;
 }
 
 img{
-    width: 100;
-    height: 100;
+    width: 80%;
+    height: 80%px;
+    
 }
 .paragrph{
     margin-top: 20px;

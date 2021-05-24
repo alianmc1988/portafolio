@@ -1,6 +1,9 @@
 body{
     background-color: rgb(173, 180, 176);
 }
+p{
+    font-size: .9em;
+}
 main{
     height: 100vh;
     background-position: center;    

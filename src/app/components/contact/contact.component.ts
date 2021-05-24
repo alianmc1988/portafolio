@@ -34,7 +34,7 @@ export class ContactComponent implements OnInit {
     this.mailForm = this._buider.group({
       from: ['', Validators.compose([Validators.required, Validators.maxLength(25)])],
       
-      subject: ['', Validators.compose([Validators.required, Validators.maxLength(25)])],
+      mail: ['', Validators.compose([Validators.required, Validators.email])],
       msjContent: ["",Validators.compose([Validators.required, Validators.maxLength(150)])]
       
     });
@@ -63,17 +63,23 @@ export class ContactComponent implements OnInit {
   
   }
   
+  
+  // Send Email from form
   sendData(e:object):any{
   
       if (this.mailForm.valid) {
-        let a = this.mailForm.value;
-        let mailbody:MailInterface;
-        mailbody = a;
-        mailbody.to = "alianmc1988@gmail.com";
-        
-        //
-        alert("your Messaje has being sended Succefuly")
+        let send = document.addEventListener('submit', (e)=>{
+          e.preventDefault();
+          let a = this.mailForm.value;
+          let mailme= document.getElementById('mail-me')
+          mailme.setAttribute('href',`mailto:alianmc1988@gmail.com?subject=${a.from} ${a.mail}&body=${a.msjContent}`)
+          mailme.click()
+          console.log(a)
+          //
+          alert("your Messaje has being sended Succefuly")
+        })
+       
     }
   }
-  
+ 
 }

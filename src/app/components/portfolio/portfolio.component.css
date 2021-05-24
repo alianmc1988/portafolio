@@ -5,6 +5,9 @@ section{
     padding-top: 50px;
     position: relative;
 }
+p{
+    font-size: .9em;
+}
 .row{
     padding-bottom: 20px;
 }
@@ -26,15 +29,14 @@ section{
     max-width: 300px;
 }
 .demos img{
-    width: 70%;
-    border-radius: 3px;
+    width: 150px;
     transition: 500;
 }
 .description{
     text-align: left;
     margin-top: 20px;
-    overflow-y: auto;
-    scroll-behavior: unset;
+    overflow-y: scroll;
+    max-height: 200px;
 }
 .buttuncont{
     text-align: center;
@@ -42,14 +44,16 @@ section{
 
 
 @media(min-width:1024px){
+    .picture-wrapper{
+        position: relative;
+    }
     .demos img{
-        width: 80%;
+        width: 200px;
         border-radius: 3px;
         transition: 0.5s;
     }
     .demos img:hover{
-        
-        width: 82.5%;
+        width: 210px;
     }
    
 }
