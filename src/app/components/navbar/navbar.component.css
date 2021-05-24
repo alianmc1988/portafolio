@@ -8,30 +8,36 @@
   nav{
     z-index: 20;
     width: 100%;
-    position: absolute;
+    position: fixed;
    
     }
     
   .strip-nav-exterior{
     z-index: 50;
-    position: absolute;
+    position: fixed;
     background-color: transparent;
     width: 230px;
     padding-bottom: 2px;
     padding-top: 40px;
-    left: -180px;
-    transition: .5s;
+    left: -180px;   /*original -180px*/
+    transition: .7s;
     height: 30px;
   }
   .strip-nav-exterior:hover{
     left: 0;
     transition: 0.7s;
-    height: auto;
+    height: 100%;
     background-color: rgb(31, 29, 34);
-    border-radius: 10px;
     
   }
- 
+  
+  .menu{
+    border-bottom: rgb(216, 133, 0) 2px solid;
+  }
+ .menu h5{
+    /* color: cornsilk; */
+    margin-left: 5px;
+  }
   
   .list-wrapper{
   background-color: transparent;
