@@ -48,12 +48,13 @@ p{
         position: relative;
     }
     .demos img{
-        width: 200px;
+        width: 170px;
+        height: 168px;
         border-radius: 3px;
         transition: 0.5s;
     }
     .demos img:hover{
-        width: 210px;
+        width: 200px;
     }
    
 }
