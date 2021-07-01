@@ -12,7 +12,7 @@ export class ProyectsService {
     this.proyectList= [
       {
         url:"../../../assets/codes/proyect_0/codeHtml.txt",
-        url_gitHub:'https://github.com/alianmc1988/calcElectric',
+        url_gitHub:'https://github.com/alianmc1988/miFactura',
         name_proyect:'CalcElectric',
         technologies:'HTML 5, CSS 3, Bootstrap 4, Vanilla Javascript',
         description:'CalcElectric. Given a previous lecture of the electric clock and a current one, you could know exactly how munch mony you have to pay and store the report to keep tracking your electrical espences ',
