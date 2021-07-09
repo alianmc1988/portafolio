@@ -31,16 +31,16 @@ export class ProyectsService {
      {
         linkname:'https://github.com/alianmc1988/TourOfficeWebApp_Express',
         url_gitHub:'https://github.com/alianmc1988/TourOfficeWebApp_Express',
-        name_proyect:'kitchenStuff',
-        technologies:'Angular CLI, Bootstrap, Python, Django, MySQL',
+        name_proyect:'Linked-House',
+        technologies:'Angular CLI, NgBootstrap, NodeJs, Express, MySQL',
         description:'Web app and Startup-Business to make easy the way in how the hostal’s owners manage their reservations all around Cuba',
-        picture:"../../../assets/barza.png"
+        picture:"../../../assets/casita.png"
      }
    ];
    
    this.proyectListES= [
     {
-      url:"../../../assets/codes/proyect_0/codeHtml.txt",
+      linkname:"https://alianmc1988.github.io/MiFactura/",
       url_gitHub:'https://github.com/alianmc1988/miFactura',
       name_proyect:'CalcElectric',
       technologies:'HTML 5, CSS 3, Bootstrap 4, Vanilla Javascript',
@@ -48,7 +48,7 @@ export class ProyectsService {
       picture:"../../../assets/codes/proyect_0/Logo-ElectricApp.png",
    },
    {
-      linkname:'http://mauel.com',
+      linkname:'https://github.com/alianmc1988/nail-art',
       url_gitHub:'https://github.com/alianmc1988/nail-art',
       name_proyect:'Nail-Art',
       technologies:'Angular CLI 12, NgBootstrap, CSS, NodeJS, Express, Mongo DB (MEAN)' ,
@@ -56,12 +56,12 @@ export class ProyectsService {
       picture:"../../../assets/nail-art-pic/nail-art-logo.jpg"
    },
    {
-      linkname:'http://tania.com',
+      linkname:'https://github.com/alianmc1988/TourOfficeWebApp_Express',
       url_gitHub:'https://github.com/alianmc1988/TourOfficeWebApp_Express',
       name_proyect:'Linked House',
-      technologies:'Stack MEAN',
+      technologies:'Angular CLI, NgBootstrap, NodeJs, Express, MySQL',
       description:'Aplicación Web y Startup-Business que le hace la vida más fácil a los dueños de Hostales a la hora de manejar sus reservaciones por toda Cuba',
-      picture:"../../../assets/barza.png"
+      picture:"../../../assets/casita.png"
    }
  ];
   }
