@@ -26,9 +26,9 @@ import {MailInterface} from '../../interfaces/mailStructure.interfaces'
 export class ContactComponent implements OnInit {
   muestra=false; //Triguer for animations
   mailForm:FormGroup;
-  
+  languaje;
   constructor( private _buider:FormBuilder
-  
+ 
   ) {
     //FormGroup Email-me
     this.mailForm = this._buider.group({
@@ -41,6 +41,8 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  
+  this.languaje = localStorage.getItem('lang')
     //Animations
     
     //FadeIn on scroll
@@ -64,22 +66,5 @@ export class ContactComponent implements OnInit {
   }
   
   
-  // Send Email from form
-  sendData(e:object):any{
-  
-      if (this.mailForm.valid) {
-        let send = document.addEventListener('submit', (e)=>{
-          e.preventDefault();
-          let a = this.mailForm.value;
-          let mailme= document.getElementById('mail-me')
-          mailme.setAttribute('href',`mailto:alianmc1988@gmail.com?subject=${a.from} ${a.mail}&body=${a.msjContent}`)
-          mailme.click()
-          console.log(a)
-          //
-          alert("your Messaje has being sended Succefuly")
-        })
-       
-    }
-  }
  
 }

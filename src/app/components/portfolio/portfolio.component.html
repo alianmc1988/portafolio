@@ -1,37 +1,76 @@
-<section class=" container-fluid app" id="portfolio">
-    <div  [@show]="!muestra? 'void':'enter'" class="portfolio-wrapper container">
+<section *ngIf="languaje == 'en'" class=" container-fluid app" id="portfolio">
+    <div [@show]="!muestra? 'void':'enter'" class="portfolio-wrapper container">
         <div class="title container">
             <h2 class="mt-5 mb-4"><b>Portfolio</b></h2>
         </div>
-        
+
         <div *ngIf="!demoMuestra" class="row">
-            
+
             <div #row *ngFor="let proyect of proyects" class="col-lg-4">
                 <div class="card mb-3">
-                   <div class="demos container mt-4">
-                   <div class="picture-wrapper">
-                    <a href="https://alianmc1988.github.io/MiFactura/" target="_blank"> <img  class="btn btn-apps"  src={{proyect.picture}} alt="demo_pic" srcset=""></a>
-                   </div>
-                   
-                        
+                    <div class="demos container mt-4">
+                        <div class="picture-wrapper">
+                            <a href={{proyect.linkname}} target="_blank"> <img class="btn btn-apps" src={{proyect.picture}} alt="demo_pic" srcset=""></a>
+                        </div>
+
+
                         <div class="description container-fluid">
                             <span><b>Name: </b>{{proyect.name_proyect}}</span><br>
                             <span><b>Technologies: </b>{{proyect.technologies}}</span><br>
                             <span><b>Description: </b><p>{{proyect.description}}</p></span>
-                            
-                       </div>
-                       <div class="container"><a class="btn btn-primary" href={{proyect.url_gitHub}} target="_blank">View Code</a></div>
-                       
-                   </div> 
-                  
+
+                        </div>
+                        <div class="container"><a class="btn btn-primary" href={{proyect.url_gitHub}} target="_blank">View Code</a></div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
-        
-        
+
+
         <app-demo *ngIf="demoMuestra" class="demoShow container" id="demoShow1"></app-demo>
-        
-        
+
+
     </div>
-    
+
+</section>
+
+<!-- Portafiolio Español -->
+<section *ngIf="languaje == 'es'" class=" container-fluid app" id="portfolio">
+    <div [@show]="!muestra? 'void':'enter'" class="portfolio-wrapper container">
+        <div class="title container">
+            <h2 class="mt-5 mb-4"><b>Portafolio</b></h2>
+        </div>
+
+        <div *ngIf="!demoMuestra" class="row">
+
+            <div #row *ngFor="let proyect of proyects" class="col-lg-4">
+                <div class="card mb-3">
+                    <div class="demos container mt-4">
+                        <div class="picture-wrapper">
+                            <a href="https://alianmc1988.github.io/MiFactura/" target="_blank"> <img class="btn btn-apps" src={{proyect.picture}} alt="demo_pic" srcset=""></a>
+                        </div>
+
+
+                        <div class="description container-fluid">
+                            <span><b>Nombre: </b>{{proyect.name_proyect}}</span><br>
+                            <span><b>Tecnologias: </b>{{proyect.technologies}}</span><br>
+                            <span><b>Descripcion: </b><p>{{proyect.description}}</p></span>
+
+                        </div>
+                        <div class="container"><a class="btn btn-primary" href={{proyect.url_gitHub}} target="_blank">Ver codigo</a></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <app-demo *ngIf="demoMuestra" class="demoShow container" id="demoShow1"></app-demo>
+
+
+    </div>
+
 </section>

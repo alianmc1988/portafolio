@@ -1,4 +1,5 @@
 <!-- Navbar Component -->
+
 <body>
     <app-navbar class="navigation-component"></app-navbar>
 
@@ -7,29 +8,32 @@
         <header class="wow fadeInUp">
             <div class="landing-wrapper container">
                 <div class="row">
-                    <div @initState class="col-lg-9 greetings">
+                    <div *ngIf="languaje == 'en'" @initState class="col-lg-9 greetings">
                         <h1>Hello, I'm Alian!!</h1>
                         <h4>A Web Developer who loves profesional challenges</h4>
                     </div>
-                    
-                    <div @initStateBrand class="col-lg-3 logo">
-                        <img  #brand src="../../../assets/favico.png" alt=" Logo" srcset=""> 
+                    <div *ngIf="languaje == 'es'" @initState class="col-lg-9 greetings">
+                        <h1>Hola, soy Alian!!</h1>
+                        <h4>Desarrollador Web que le apasionan los retos profesionales</h4>
                     </div>
-                </div>                
+                    <div @initStateBrand class="col-lg-3 logo">
+                        <img #brand src="../../../assets/favico.png" alt=" Logo" srcset="">
+                    </div>
+                </div>
             </div>
         </header>
-        
-     
+
+
     </main>
 
-<!-- Other Sections -->
-<div class="sections-wrapper container">
-    <app-portfolio class="app-portfolio app" id = "portafolio"></app-portfolio>
-    <app-about class="app-about app"></app-about>
-    <app-contact class="app-contact app"></app-contact>
-</div>
+    <!-- Other Sections -->
+    <div class="sections-wrapper container">
+        <app-portfolio class="app-portfolio app" id="portafolio"></app-portfolio>
+        <app-about class="app-about app"></app-about>
+        <app-contact class="app-contact app"></app-contact>
+    </div>
 
 
-<app-footer></app-footer>
+    <app-footer></app-footer>
 
 </body>

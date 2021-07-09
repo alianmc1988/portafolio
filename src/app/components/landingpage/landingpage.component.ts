@@ -34,15 +34,17 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   ]
 })
 export class LandingpageComponent implements OnInit {
-
+  languaje; 
   
   constructor() {
+    if(localStorage.getItem('lang')==null){
+      localStorage.setItem('lang','en')
+      
+    }
+  
   }
 
   ngOnInit(): void {
-  
-    
-    
+    this.languaje = localStorage.getItem('lang')
   }
-  
 }

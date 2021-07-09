@@ -22,10 +22,21 @@ import { state, style, trigger,transition,animation, animate } from '@angular/an
 })
 export class AboutComponent implements OnInit {
   muestra=false;
+  languaje;
   constructor() { }
 
   ngOnInit(): void {
+    //languaje INIT
+    this.languaje = localStorage.getItem('lang')
+    //Animation Init Function
+    this.scrollAnimationFunction()
   
+  }
+  
+  
+  
+  //Animation Function
+  scrollAnimationFunction(){
     window.addEventListener('scroll',()=>{
         
       let item = document.getElementById('about');
@@ -40,7 +51,6 @@ export class AboutComponent implements OnInit {
         this.muestra=false;
       }
     })
-  
   }
 
 }

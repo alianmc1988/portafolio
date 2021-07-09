@@ -6,20 +6,22 @@ import { Injectable } from '@angular/core';
 export class ProyectsService {
 
   // Variables
-  proyectList:any;
+  proyectListEN:any;
+  proyectListES:any;
+  
   
   constructor() { 
-    this.proyectList= [
+    this.proyectListEN= [
       {
-        url:"../../../assets/codes/proyect_0/codeHtml.txt",
+        linkname:"https://alianmc1988.github.io/MiFactura/",
         url_gitHub:'https://github.com/alianmc1988/miFactura',
         name_proyect:'CalcElectric',
         technologies:'HTML 5, CSS 3, Bootstrap 4, Vanilla Javascript',
-        description:'CalcElectric. Given a previous lecture of the electric clock and a current one, you could know exactly how munch mony you have to pay and store the report to keep tracking your electrical espences ',
+        description:'CalcElectric. Given a previous lecture of the electric clock and a current one, you could know exactly how munch mony you have to pay. You can also store the report to keep tracking of your electrical espences. ',
         picture:"../../../assets/codes/proyect_0/Logo-ElectricApp.png",
      },
      {
-        linkname:'http://mauel.com',
+        linkname:'https://github.com/alianmc1988/nail-art',
         url_gitHub:'https://github.com/alianmc1988/nail-art',
         name_proyect:'Nail-Art',
         technologies:'Angular CLI 12, NgBootstrap, CSS, NodeJS, Express, Mongo DB (MEAN)' ,
@@ -27,14 +29,41 @@ export class ProyectsService {
         picture:"../../../assets/nail-art-pic/nail-art-logo.jpg"
      },
      {
-        linkname:'http://tania.com',
+        linkname:'https://github.com/alianmc1988/TourOfficeWebApp_Express',
         url_gitHub:'https://github.com/alianmc1988/TourOfficeWebApp_Express',
         name_proyect:'kitchenStuff',
-        technologies:'HTML, CSS, Bootstrap, vanilla Javascript',
-        description:'Lorem ipsum dolor sit, amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis eum reprehenderit esse tempore id, corporis aliquam dicta dolorem omnis eius! adipisicing elit. Maxime deserunt rerum repudiandae ipsam ut voluptate sed facere vitae omnis perspicia',
+        technologies:'Angular CLI, Bootstrap, Python, Django, MySQL',
+        description:'Web app and Startup-Business to make easy the way in how the hostal’s owners manage their reservations all around Cuba',
         picture:"../../../assets/barza.png"
      }
    ];
+   
+   this.proyectListES= [
+    {
+      url:"../../../assets/codes/proyect_0/codeHtml.txt",
+      url_gitHub:'https://github.com/alianmc1988/miFactura',
+      name_proyect:'CalcElectric',
+      technologies:'HTML 5, CSS 3, Bootstrap 4, Vanilla Javascript',
+      description:'CalcElectric.Dado un valor de lectura previo del metrocontador, se puede conocer exactamente cuanto debe pagar por consumo de corriente ',
+      picture:"../../../assets/codes/proyect_0/Logo-ElectricApp.png",
+   },
+   {
+      linkname:'http://mauel.com',
+      url_gitHub:'https://github.com/alianmc1988/nail-art',
+      name_proyect:'Nail-Art',
+      technologies:'Angular CLI 12, NgBootstrap, CSS, NodeJS, Express, Mongo DB (MEAN)' ,
+      description:'Aplicación web para un centro de belleza en la Habana. Esta le muestra al cliente todas las prestaciones del Centro y le permite hacer reservas. Además le permite al dueño, manejar esas reservas y administrar el stock de productos en existencia. ',
+      picture:"../../../assets/nail-art-pic/nail-art-logo.jpg"
+   },
+   {
+      linkname:'http://tania.com',
+      url_gitHub:'https://github.com/alianmc1988/TourOfficeWebApp_Express',
+      name_proyect:'Linked House',
+      technologies:'Stack MEAN',
+      description:'Aplicación Web y Startup-Business que le hace la vida más fácil a los dueños de Hostales a la hora de manejar sus reservaciones por toda Cuba',
+      picture:"../../../assets/barza.png"
+   }
+ ];
   }
   
   

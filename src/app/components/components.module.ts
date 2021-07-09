@@ -11,12 +11,13 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DemoComponent } from './demo/demo.component';
+import { SwitchComponent } from './navbar/switch/switch.component';
 
 // Instalar Angular Animations
 
 
 @NgModule({
-  declarations: [PortfolioComponent, AboutComponent, ContactComponent, LandingpageComponent, NavbarComponent, FooterComponent, DemoComponent],
+  declarations: [PortfolioComponent, AboutComponent, ContactComponent, LandingpageComponent, NavbarComponent, FooterComponent, DemoComponent, SwitchComponent],
   imports: [
     CommonModule,
     BrowserAnimationsModule,
