@@ -63,7 +63,7 @@ export class ProyectsService {
       description:'Aplicación Web y Startup-Business que le hace la vida más fácil a los dueños de Hostales a la hora de manejar sus reservaciones por toda Cuba',
       picture:"../../../assets/casita.png"
    }
- ];
+    ];
   }
   
   

@@ -28,12 +28,12 @@ export class PortfolioComponent implements OnInit {
    muestra = false;
    demoMuestra = false;
   constructor(private _proyectService:ProyectsService) { 
-    
+    this.languaje = localStorage.getItem('lang')
   }
 
   ngOnInit(): void {
       //Languaje Control
-      this.languaje = localStorage.getItem('lang')
+      
       //AnimationFadeIn
        this.animationFadeIn()
       //Proyects INIT
