@@ -37,7 +37,7 @@ export class ProyectsService {
         picture:"../../../assets/casita.png"
      }
    ];
-   
+   //Lista en español
    this.proyectListES= [
     {
       linkname:"https://alianmc1988.github.io/MiFactura/",
